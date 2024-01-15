@@ -23,3 +23,12 @@ function prevSlide() {
 
 // Automatic slideshow
 setInterval(nextSlide, 5000);
+
+
+
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  })
