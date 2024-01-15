@@ -6,275 +6,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* :root {
-  --text-blue: #0E1D70;
-  --text-slate: rgba(133, 133, 133, 0.616);
-  --text-orange: #FB5205;
-  --text-orange-hover: #cf602c;
-  --text-white: #ffffff;
-  --text-white-hover: #ffffff;
-  --bg-black: #000000;
-  --bg-cyne: #00D9FF;
-  --bg-cyne-hover: #01cdf1;
-  --bg-sky: #2584FF;
-  --bg-sky-hover: #0c71f5;
-  --bg-green: green;
-
-}
-
-.slider-container {
-  width: 100%;
-  background-color: var(--text-white);
-  position: relative;
-  margin: auto;
-  overflow: hidden;
-
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-  min-width: 100%;
-}
-
-.slide img {
-  width: 100%;
-  height: 500px;
-}
-
-.slider-container button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
-  font-weight: bold;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.prev {
-  left: 50px; 
-}
-
-.next {
-  right: 50px; 
-}
-
-.slider-container .review {
-  position: relative;
-  width: 70%;
-  margin: 50px auto;
-  height: auto;
-  background: var(--text-white);
-  display: flex;
-  padding: 30px;
-  gap: 30px;
-  border-radius: 10px;
-  flex-direction: row;
-  box-shadow: 20px 20px 40px #b8b8b8, -20px -20px 40px #ffffff;
-}
-
-.review .slider-container button {
-  top: 5%; 
-}
-
-.review .reviewimg {
-  flex-basis: 40%;
-  width: 100%;
-  max-height: 370px;
-}
-
-.review .reviewimg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.slider-container h2 {
-  width: 60%;
-  margin: auto;
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.text {
-  text-align: center;
-  max-width: 60%;
-  margin: auto;
-  font-size: 14px;
-  color: var(--text-slate);
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-}
-
-.review .badge {
-  flex-basis: 60%;
-  padding: 0;
-  margin: 0;
-}
-
-.review .badge .badgeContent {
-  width: 50px;
-  height: 50px;
-  padding: 13px;
-  border-radius: 50%;
-  position: absolute;
-  top: 50px;
-  left: 40%;
-  transform: translateX(-50%);
-  background-color: var(--text-orange);
-}
-
-.review .badge .badgeContent img {
-  width: 100%;
-  height: 100%;
-}
-
-.review .badge .badgeText {
-  position: relative;
-  padding: 30px 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.review .badge .badgeText p {
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 500;
-  color: var(--text-slate);
-  text-align: start;
-  margin: 0;
-  line-height: 1.5;
-  letter-spacing: 0px;
-  padding: 0;
-}
-
-.review .badge .badgeText .person {
-  display: flex;
-  gap: 10px;
-}
-
-.review .badge .badgeText .person img {
-  width: 50px;
-  height: 2px;
-  margin-top: 10px;
-  background-color: var(--bg-cyne);
-}
-
-.review .badge .badgeText .person .name {
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-}
-
-.review .badge .badgeText .person .name h2 {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  width: 100%;
-  font-weight: 700;
-}
-
-.review .badge .badgeText .person .name p {
-  margin: 3px 0px;
-  padding: 0;
-  font-style: normal;
-  font-size: 13px;
-  font-weight: 500;
-}
-
-@media screen and (max-width: 1242px) {
-  .review .badge .badgeContent {
-    display: none;
-  }
-
-  .review .badge .badgeText {
-    padding: 0px;
-  }
-
-  .review .badge {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .review .reviewimg {
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .review {
-    flex-direction: column;
-    margin: 50px auto 80px auto;
-  }
-
-  .slider-container h2 {
-    font-size: 22px;
-  }
-
-  .text {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .review .reviewimg {
-    margin-bottom: 0px;
-  }
-
-  .review .badge .badgeText {
-    padding: 0px;
-    flex-direction: column;
-    position: relative;
-    gap: 20px;
-  }
-
-  .review .reviewimg {
-    flex-basis: 40%;
-    position: relative;
-    width: 100%;
-    max-height: 270px;
-  }
-
-  .review .badge .badgeText p {
-    text-align: justify;
-    font-size: 10px;
-  }
-
-  .review .badge .badgeText .person {
-    flex-direction: column;
-  }
-
-  .review .badge .badgeText .person .name h2 {
-    text-align: start;
-    width: 100%;
-    font-size: 12px;
-  }
-
-  .review .badge .badgeText .person .name p {
-    text-align: start;
-    width: 100%;
-    font-size: 10px;
-  }
-
-  .review .badge .badgeContent {
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-    border-radius: 50%;
-    position: absolute;
-    top: 30%;
-    left: 40%;
-  }
-} */
 
 :root {
     --text-blue: #0E1D70;
@@ -293,14 +24,16 @@ body {
 
 .customer {
     width: 100%;
-    margin: auto;
+    background-color: var(--text-white);
+    margin-bottom: 50px;
+
 }
 .customer .tittle{
     width: 70%;
     margin: auto;
     text-align: center;
     font-size: 38px;
-    color: var(--bg-black);
+    color: var(--text-blue);
 }
 .customer .subtittle{
     width: 70%;
@@ -309,29 +42,22 @@ body {
     padding: 0;
     margin: 0px auto;
     text-align: center;
+    margin-bottom: 50px;
 }
-.swiper-wrapper {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 0px;
-    background-color: var(--text-white);
-    overflow: hidden;
-
-  }
 .swiper {
-    width: 70%;
-    height: auto;
-    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    margin: auto;
     padding: 0px;
     background-color: transparent;
     overflow: hidden;
-
+    box-shadow: 20px 20px 40px #b8b8b8, -20px -20px 40px #ffffff;
+    border-radius: 10px;
   }
 
   .swiper-slide {
     width: 100%;
-    margin: 50px auto;
+    margin: auto;
     box-sizing: border-box;
     height: auto;
     display: flex;
@@ -339,17 +65,15 @@ body {
     align-items: center;
     position: relative;
     padding: 30px;
-    gap: 10px;
-    border-radius: 10px;
+    gap: 30px;
     flex-direction: row;
     background-color: transparent;
-    box-shadow: 20px 20px 40px #b8b8b8, -20px -20px 40px #ffffff;
   }
 
    .reviewimg {
     flex-basis: 40%;
     width: 100%;
-    max-height: 370px;
+    height: 370px;
   }
   
    .reviewimg img {
@@ -383,7 +107,7 @@ body {
   
    .badge .badgeText {
     position: relative;
-    padding: 30px;
+    padding: 30px 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -423,6 +147,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 20px;
+    color: #0E1D70;
     width: 100%;
     font-weight: 700;
   }
@@ -456,15 +181,22 @@ body {
   }
   
   @media screen and (max-width: 768px) {
+    .swiper {
+        width: 80%;
+    }
     .swiper-slide {
       flex-direction: column;
-      margin: 50px auto 80px auto;
       padding: 15px;
     }
      .customer .tittle {
       font-size: 20px;
     }
-  
+    .swiper-button-next{
+        display: none;
+    }
+    .swiper-button-prev{
+        display: none;
+    }
      .customer .subtittle {
       max-width: 100%;
       text-align: center;
